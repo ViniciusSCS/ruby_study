@@ -276,16 +276,79 @@
     #     puts "Meu nome é Vinicius"
     # end
 
-    def soma(n1, n2, &bloco)
-        resultado = n1 + n2
+    # def soma(n1, n2, &bloco)
+    #     resultado = n1 + n2
 
-        if block_given?
-            yield
-        else
-            puts resultado
-        end
-    end
+    #     if block_given?
+    #         yield
+    #     else
+    #         puts resultado
+    #     end
+    # end
 
-    soma(1, 2) do
-        puts "Estou passando um bloco de código e não quero ser iterrompido por nada"
-    end
+    # soma(1, 2) do
+    #     puts "Estou passando um bloco de código e não quero ser iterrompido por nada"
+    # end
+
+
+#
+# Teste 17: Step, Downto, Next, Pred 
+#
+    # puts "=========Multiplicador========="
+    # 2.step(90, 10) do |n|
+    #     puts n
+    # end
+
+    # puts "=========Decrescente========="
+    # 10.downto(1) do |n|
+    #     puts n
+    # end
+
+    # puts "=========Sucessor========="
+
+    # puts 10.next
+
+    # puts "========Antecessor=========="
+
+    # puts 10.pred
+
+#
+# Teste 18: Even, Odd, Integer, Zero, Round
+#
+
+    puts "==============EVEN=============="
+    ## Devolve True quando o valor for par
+    puts 10.even?
+
+    puts 11.even?
+
+    puts "==============Odd================"
+    ## Devolve True quando o valor for ímpar
+    puts 10.odd?
+    
+    puts 11.odd?
+
+    puts "==============Integer============"
+    ## Devolve True quando o valor for inteiro
+    
+    puts 10.integer?
+
+    puts 10.5.integer?
+
+    puts "==============Zero==============="
+    ## Devolve True quando o valor for zero
+
+    print "Digite um valor: "
+    n = gets.to_i
+    
+    puts n
+
+    puts n.zero?
+
+
+    puts "==============Round=============="
+    ## Arredond a um valor.
+
+    puts 8.4.round
+
+
