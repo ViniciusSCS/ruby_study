@@ -347,7 +347,7 @@
 
 
     puts "==============Round=============="
-    ## Arredond a um valor.
+    ## Arredonda um valor.
 
     puts 8.4.round
 
