@@ -166,18 +166,126 @@
 # Teste 10: Laço de Repetição While
 #
 
-    i = 1
-    while i <= 5 
-        puts i
+    # i = 1
+    # while i <= 5 
+    #     puts i
         
-        i += 1
+    #     i += 1
+    # end
+
+    # puts '------------'
+
+    # cor = ''
+    # while cor != 'azul'
+    #     print 'Digite uma cor: '
+    #     cor = gets.chomp
+    #     puts cor 
+    # end
+
+#
+# Teste 11: While e Until
+#
+
+    # i = 0
+    # until i > 5
+    #     puts i
+    #     i += 1
+    # end
+
+#
+# Teste 12: Loop
+#
+
+    # loop {
+    #     print "Digite uma frase: "
+    #     a = gets.chomp
+    #     if a == "sair" 
+    #         exit
+    #     end 
+    # }
+
+
+#
+# Teste 13: Símbolos
+#
+
+    # for i in 0..2
+    #     puts "ola".object_id
+    # end
+
+    # puts
+    # puts
+
+    # for i in 0..2
+    #     puts :ola.object_id
+    # end
+
+#
+# Teste 14: Hash
+#
+
+    # h = {
+    #     nome: "Vinicius",
+    #     idade: "26"
+    # }
+
+    # puts h
+
+    # Class Pessoa 
+    #     attr_reader :nome, :idade
+    # end
+
+
+#
+# Teste 15: Parâmetros
+#
+
+    # puts "Com o Curinga"
+    # def teste(*parametros)
+    #     nome = parametros
+    #     p nome
+    # end
+
+    # teste("a", "b", 8, 9, 10)
+
+    # puts "------------------"
+
+    # puts "Sem Curinga"
+    # @vetor = []
+
+    # def teste2(n)
+    #     @vetor << n
+    # end
+
+    # for i in 0..2
+    #     teste2(gets.chomp.downcase)
+    # end
+    # p @vetor
+
+
+#
+# Teste 16: Yield
+#
+
+    # def ola
+    #     puts "Olá Mundo!!"
+    #     yield 
+    # end
+
+    # ola do 
+    #     puts "Meu nome é Vinicius"
+    # end
+
+    def soma(n1, n2, &bloco)
+        resultado = n1 + n2
+
+        if block_given?
+            yield
+        else
+            puts resultado
+        end
     end
 
-    puts '------------'
-
-    cor = ''
-    while cor != 'azul'
-        print 'Digite uma cor: '
-        cor = gets.chomp
-        puts cor 
+    soma(1, 2) do
+        puts "Estou passando um bloco de código e não quero ser iterrompido por nada"
     end
