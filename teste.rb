@@ -316,39 +316,78 @@
 # Teste 18: Even, Odd, Integer, Zero, Round
 #
 
-    puts "==============EVEN=============="
-    ## Devolve True quando o valor for par
-    puts 10.even?
+    # puts "==============EVEN=============="
+    # ## Devolve True quando o valor for par
+    # puts 10.even?
 
-    puts 11.even?
+    # puts 11.even?
 
-    puts "==============Odd================"
-    ## Devolve True quando o valor for ímpar
-    puts 10.odd?
+    # puts "==============Odd================"
+    # ## Devolve True quando o valor for ímpar
+    # puts 10.odd?
     
-    puts 11.odd?
+    # puts 11.odd?
 
-    puts "==============Integer============"
-    ## Devolve True quando o valor for inteiro
+    # puts "==============Integer============"
+    # ## Devolve True quando o valor for inteiro
     
-    puts 10.integer?
+    # puts 10.integer?
 
-    puts 10.5.integer?
+    # puts 10.5.integer?
 
-    puts "==============Zero==============="
-    ## Devolve True quando o valor for zero
+    # puts "==============Zero==============="
+    # ## Devolve True quando o valor for zero
 
-    print "Digite um valor: "
-    n = gets.to_i
+    # print "Digite um valor: "
+    # n = gets.to_i
     
-    puts n
+    # puts n
 
-    puts n.zero?
+    # puts n.zero?
 
 
-    puts "==============Round=============="
-    ## Arredonda um valor.
+    # puts "==============Round=============="
+    # ## Arredonda um valor.
 
-    puts 8.4.round
+    # puts 8.4.round
 
+#
+# Teste 19: kind_of?, defined?, all?, select, reject, any?, detect
+#
+
+    puts "=================kind_of?===================="
+    puts "a".kind_of?(String)
+
+    puts "=================defined??==================="
+    a = "Vinicius"
+
+    puts defined? a
+    puts defined? 1.next
+
+    puts "=================all?========================"
+    a = 2..10
+
+    puts a.all? {|valor| valor > 1}
+
+
+    puts "=================select?====================="
+    a = 1..10
+
+    puts a.select{|valor| valor.even?}
+    
+    puts "=================reject?====================="
+    a = 1..10
+    
+    puts a.reject{|valor| valor.even?}
+    
+    puts "=================any?========================"
+    a = 0..10
+
+    puts a.any? {|valor| valor == 3}
+    puts a.any? {|valor| valor == 11}
+
+    puts "=================detect?====================="
+    a = 0..10
+
+    puts a.detect {|valor| valor > 0 && valor % 4 == 0}
 
