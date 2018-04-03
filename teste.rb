@@ -29,7 +29,7 @@
     # puts "Olá #{m}"
 
 #
-# Teste 4
+# Teste 4: If
 #
 
     # var = 11
@@ -45,7 +45,7 @@
     # end
 
 #
-# Teste 5 
+# Teste 5: If Ternário
 #
 
     # puts "Digite a primeira nota:"
@@ -84,17 +84,100 @@
     # puts m
 
 #
-# Teste 6
+# Teste 6: Case
 #
 
-    print 'Digite a cor do sinal: '
-    semaforo = gets.chomp.downcase
+    # print 'Digite a cor do sinal: '
+    # semaforo = gets.chomp.downcase
 
-    case semaforo
-        when "verde"
-            puts 'siga'
-        when "amarelo"
-            puts 'atenção'
-        when "vermelho"
-            puts 'pare'
+    # case semaforo
+    #     when "verde"
+    #         puts 'siga'
+    #     when "amarelo"
+    #         puts 'atenção'
+    #     when "vermelho"
+    #         puts 'pare'
+    # end
+
+#
+# Teste 7: Laço de Repetição FOR
+#
+    # a = 0
+
+    # for i in 0..10 do
+    #     puts i
+    # end
+
+    # puts 
+
+    # for a in a..5 do
+    #     a += 1
+    #     puts a
+    # end
+
+#
+# Teste 7: Exercício de Multiplicação
+#
+
+    # for i in 1..10 do
+    #     puts '------'
+    #     puts "#{i} * 1 = #{1*i}"
+    #     puts "#{i} * 2 = #{2*i}"
+    #     puts "#{i} * 3 = #{3*i}"
+    #     puts "#{i} * 4 = #{4*i}"
+    #     puts "#{i} * 5 = #{5*i}"
+    #     puts "#{i} * 6 = #{6*i}"
+    #     puts "#{i} * 7 = #{7*i}"
+    #     puts "#{i} * 8 = #{8*i}"
+    #     puts "#{i} * 9 = #{9*i}"
+    #     puts "#{i} * 10 = #{10*i}"
+    # end
+
+#
+# Teste 8: Laço de Repetição Vetor
+#
+    # puts 'Vetor'
+    # vetor = [1,2,3,4,5]
+
+    # for i in vetor
+    #     puts i
+    # end
+
+    # puts '------------------'
+
+    # puts 'iterando com EACH'
+    # vetor.each do |i|
+    #     puts i
+    # end
+
+#
+# Teste 9: Laço de Repetição Times
+#
+    
+    # print "Digite um número: "
+    # num = gets.to_i
+    
+    # puts "Digite #{num} nome(s): "
+    # x = num.times.map do gets.chomp end
+    # print x
+
+
+#
+# Teste 10: Laço de Repetição While
+#
+
+    i = 1
+    while i <= 5 
+        puts i
+        
+        i += 1
+    end
+
+    puts '------------'
+
+    cor = ''
+    while cor != 'azul'
+        print 'Digite uma cor: '
+        cor = gets.chomp
+        puts cor 
     end
