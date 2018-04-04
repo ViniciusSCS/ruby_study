@@ -683,27 +683,47 @@
 # Teste 25: Métodos para Array (Parte 2) - Inserte, Clear, Include, empty?
 #
 
-    puts "=======================Inserte======================"
-    # Insere elementos no array na posição indicada por parâmetro
-    a = Array.new(5)
-    a.insert(1, 10)
+    # puts "=======================Inserte======================"
+    # # Insere elementos no array na posição indicada por parâmetro
+    # a = Array.new(5)
+    # a.insert(1, 10)
 
-    p a
-    puts "=======================Clear========================"
-    # Esvazia um array
-    a = [1, 2, 3, 4, 5]
-    a = a.clear
+    # p a
+    # puts "=======================Clear========================"
+    # # Esvazia um array
+    # a = [1, 2, 3, 4, 5]
+    # a = a.clear
     
-    p a
+    # p a
 
-    puts "=======================Include======================"
-    # Verifica se algum elemento pertence ao array e retorna TRUE caso o elemento esteja no array
-    a = [1, 2, 3, 4, 5]
-    puts a.include?(6)
-    puts "=======================Empty========================"
-    # Verifica se um array está vazio e retorna TRUE caso o elemento esteja vazio
-    a = [1, 2, 3, 4, 5]
-    b = []
-    p "O array a recebeu: #{a.empty?}, por isso não está vazio"
-    puts
-    p "O array b recebeu: #{b.empty?}, por isso está vazio"
+    # puts "=======================Include======================"
+    # # Verifica se algum elemento pertence ao array e retorna TRUE caso o elemento esteja no array
+    # a = [1, 2, 3, 4, 5]
+    # puts a.include?(6)
+    # puts "=======================Empty========================"
+    # # Verifica se um array está vazio e retorna TRUE caso o elemento esteja vazio
+    # a = [1, 2, 3, 4, 5]
+    # b = []
+    # p "O array a recebeu: #{a.empty?}, por isso não está vazio"
+    # puts
+    # p "O array b recebeu: #{b.empty?}, por isso está vazio"
+
+#
+# Teste 26: Parâmetros Nomeados
+#
+
+    # Os parâmetros nomeados são capazes de receber valores mesmo estando fora de ordem.
+    puts"===Não nomeados==="
+    def teste (n1, n2)
+        puts n1
+        puts n2
+    end
+
+    teste(1, 2)
+
+    puts"====Nomeados===="
+    def teste2(parametros)
+        puts parametros[:primeiro], parametros [:segundo]
+    end
+
+    teste2(segundo:10, primeiro:20)
