@@ -713,17 +713,27 @@
 #
 
     # Os parâmetros nomeados são capazes de receber valores mesmo estando fora de ordem.
-    puts"===Não nomeados==="
-    def teste (n1, n2)
-        puts n1
-        puts n2
-    end
+    # puts"===Não nomeados==="
+    # def teste (n1, n2)
+    #     puts n1
+    #     puts n2
+    # end
 
-    teste(1, 2)
+    # teste(1, 2)
 
-    puts"====Nomeados===="
-    def teste2(parametros)
-        puts parametros[:primeiro], parametros [:segundo]
-    end
+    # puts"====Nomeados===="
+    # def teste2(parametros)
+    #     puts parametros[:primeiro], parametros [:segundo]
+    # end
 
-    teste2(segundo:10, primeiro:20)
+    # teste2(segundo:10, primeiro:20)
+
+#
+# Teste 27: attr_reader
+#
+    obj = MinhaClasse.new
+    puts obj.class
+
+
+
+    
