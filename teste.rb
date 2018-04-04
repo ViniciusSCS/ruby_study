@@ -620,5 +620,90 @@
     # puts 15.to_s(16)
 
 #
-# Teste 25: Métodos para Array
+# Teste 25: Métodos para Array (Parte 1) - Unshift, Shift, pop, Slice, Interseção, Scma, Multiplição
 #
+
+    # puts "===================Unshift=========================="
+    # # Adiciona elemento no início do array
+    # a = [1, 2, 3, 4, 5, 6]
+
+    # a.unshift(0)
+
+    # p a
+    # puts "===================Shift============================"
+    # # Remove elemento do início do array
+    # a = [1, 2, 3, 4, 5, 6]
+    
+    # p a
+
+    # a.shift
+    
+    # p a
+    # puts "===================pop=============================="
+    # # Remove o último elemento do array
+    # e = [1, 2, 3, 4, 5, 6]
+
+    # p e
+    # puts
+    # p e.pop
+    # p e
+    # puts "===================Slice============================"
+    # # Copia partes de um array
+    # a = [8, 6, 4, 9, 20, 23]
+    # p a
+
+    # d = ["a", "b", "c", "d"]
+    # p d
+
+    # b = a.slice(0..2)
+    # c = d.slice(1,2)
+    # p b
+    # p c
+
+    # puts "===================Interseção======================="
+    # # 
+    # a = [1, 2, 3, 4, 5, 6]
+    # b = [1, 5, 6, 7, 8, 9]
+
+    # p "O(s) valor(es) comum(ns) entre os arrays: #{a & b}"
+    # puts "===================Scma============================="
+    # #
+    # a = [1, 2, 3, 4, 5, 6]
+    # b = [1, 5, 6, 7, 8, 9]
+
+    # p "A concatenação dos arrays: #{a + b}"
+    # puts "===================Multiplição======================"
+    # # 
+    # a = [1, 2, 3]
+
+    # p "A multiplicação do array: #{a * 2}"
+
+    
+#
+# Teste 25: Métodos para Array (Parte 2) - Inserte, Clear, Include, empty?
+#
+
+    puts "=======================Inserte======================"
+    # Insere elementos no array na posição indicada por parâmetro
+    a = Array.new(5)
+    a.insert(1, 10)
+
+    p a
+    puts "=======================Clear========================"
+    # Esvazia um array
+    a = [1, 2, 3, 4, 5]
+    a = a.clear
+    
+    p a
+
+    puts "=======================Include======================"
+    # Verifica se algum elemento pertence ao array e retorna TRUE caso o elemento esteja no array
+    a = [1, 2, 3, 4, 5]
+    puts a.include?(6)
+    puts "=======================Empty========================"
+    # Verifica se um array está vazio e retorna TRUE caso o elemento esteja vazio
+    a = [1, 2, 3, 4, 5]
+    b = []
+    p "O array a recebeu: #{a.empty?}, por isso não está vazio"
+    puts
+    p "O array b recebeu: #{b.empty?}, por isso está vazio"
