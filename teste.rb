@@ -680,10 +680,10 @@
 
     
 #
-# Teste 25: Métodos para Array (Parte 2) - Inserte, Clear, Include, empty?
+# Teste 25: Métodos para Array (Parte 2) - Insert, Clear, Include, empty?
 #
 
-    puts "=======================Inserte======================"
+    puts "=======================Insert======================"
     # Insere elementos no array na posição indicada por parâmetro
     a = Array.new(5)
     a.insert(1, 10)
