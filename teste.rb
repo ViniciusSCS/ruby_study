@@ -727,13 +727,4 @@
     # end
 
     # teste2(segundo:10, primeiro:20)
-
-#
-# Teste 27: attr_reader
-#
-    obj = MinhaClasse.new
-    puts obj.class
-
-
-
-    
+   
